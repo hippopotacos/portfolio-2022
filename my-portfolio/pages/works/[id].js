@@ -1,7 +1,7 @@
-// pages/blog/[id].js
+// pages/works/[id].js
 import { client } from "../../libs/client";
 
-export default function BlogId({ works }) {
+export default function WorksId({ works }) {
   return (
     <main>
       <h1>{works.title}</h1>
