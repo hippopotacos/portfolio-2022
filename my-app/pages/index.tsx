@@ -1,15 +1,30 @@
 import Link from 'next/link'
-import Layout from '../components/Layout'
+import { client } from '../libs/client'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+export default function IndexPage({ work }) {
+  return(
+    <>
+      <div>
+        <ul>
+          {work.map((work)=>(
+            <li key={work.id}>
+              <Link href={`/works/${work.id}`}>
+                <a>{work.title}</a>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </>
+  )
+}
 
-export default IndexPage
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "works" })
+
+  return {
+    props: {
+      work: data.contents
+    }
+  }
+}
