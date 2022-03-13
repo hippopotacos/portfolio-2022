@@ -1,0 +1,7 @@
+.footer {
+  font-size: 1.2rem;
+}
+
+main + .footer {
+  margin-top: 20px;
+}
