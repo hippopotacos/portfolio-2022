@@ -1,13 +1,14 @@
 import Logo from "./logo";
 import styles from "../styles/Header.module.css";
+import Link from "next/link";
 
 export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <a href="/">
+        <Link href="/">
           <Logo />
-        </a>
+        </Link>
       </header>
     </>
   );
