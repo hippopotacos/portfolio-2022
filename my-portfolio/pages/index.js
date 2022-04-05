@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { client } from "../libs/client";
 import styles from "../styles/Home.module.css"
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../components/Header.js";
+import Footer from "../components/Footer.js";
 
 export default function Home({ works }) {
   return (
