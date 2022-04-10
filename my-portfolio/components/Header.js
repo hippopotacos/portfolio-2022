@@ -1,5 +1,5 @@
 import Logo from "./Logo.js";
-import styles from "../styles/Header.module.css";
+import styles from "../styles/Header.module.scss";
 import Link from "next/link";
 
 export default function Header() {
