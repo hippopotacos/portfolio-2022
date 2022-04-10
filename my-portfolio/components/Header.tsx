@@ -1,4 +1,4 @@
-import Logo from "./Logo.js";
+import Logo from "./Logo";
 import styles from "../styles/Header.module.scss";
 import Link from "next/link";
 
