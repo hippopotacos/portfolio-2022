@@ -30,48 +30,48 @@ export default function Home() {
             <p className={styles.section}>※株式会社アンクシステムズでの制作実績は除く</p>
             <ul className={styles.items}>
               <li className={styles.item}>
-                <a href="/project/beginner">
+                <Link href="/project/beginner">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
-                      <img className={styles.item__image} src="/images/ogimage.png" alt="thumbnail" />
+                      <Image className={styles.item__image} src="/images/ogimage.png" alt="thumbnail" width={1200} height={630} />
                     </p>
                     <p className={styles.item__title}>このポートフォリオサイトについて</p>
                     <p className={styles.item__date}>2022.05</p>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className={styles.item}>
-                <a href="/project/beginner">
+                <Link href="/project/beginner">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
-                      <img className={styles.item__image} src="/images/ogimage-internet.png" alt="thumbnail" />
+                      <Image className={styles.item__image} src="/images/ogimage-internet.png" alt="thumbnail" width={1200} height={630} />
                     </p>
                     <p className={styles.item__title}>はじめてのインターネット</p>
                     <p className={styles.item__date}>2022.01</p>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className={styles.item}>
-                <a href="/internets/">
+                <Link href="/internets/">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
-                      <img className={styles.item__image} src="/images/ogimage-kentonakahara.png" alt="thumbnail" />
+                      <Image className={styles.item__image} src="/images/ogimage-kentonakahara.png" alt="thumbnail" width={1200} height={630} />
                     </p>
                     <p className={styles.item__title}>Kento Nakahara</p>
                     <p className={styles.item__date}>2021.06</p>
                   </div>
-                </a>
+                </Link>
               </li>
               <li className={styles.item}>
-                <a href="/internets/">
+                <Link href="/internets/">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
-                      <img className={styles.item__image} src="/images/ogimage-desicco.png" alt="thumbnail" />
+                      <Image className={styles.item__image} src="/images/ogimage-desicco.png" alt="thumbnail" width={1200} height={630} />
                     </p>
                     <p className={styles.item__title}>desicco</p>
                     <p className={styles.item__date}>2018.07</p>
                   </div>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

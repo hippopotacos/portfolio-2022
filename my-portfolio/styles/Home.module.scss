@@ -160,8 +160,7 @@
 }
 
 .item__thumbnail {
-  overflow: hidden;
-  border-radius: 8px;
+  font-size: 0;
 }
 
 .item__title {
@@ -172,6 +171,7 @@
   display: block;
   width: 100%;
   object-fit: contain;
+  border-radius: 8px;
 }
 
 .item__date {
@@ -186,7 +186,7 @@
   margin-top: 3px;
 }
 
-@media not all and (min-width: 768px) {
+@media not all and (min-width: 480px) {
   .items {
     grid-template-columns: auto;
   }
