@@ -52,7 +52,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link href="/internets/">
+                <Link href="/">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
                       <Image className={styles.item__image} src="/images/ogimage-kentonakahara.png" alt="thumbnail" width={1200} height={630} />
@@ -63,7 +63,7 @@ export default function Home() {
                 </Link>
               </li>
               <li className={styles.item}>
-                <Link href="/internets/">
+                <Link href="/">
                   <div className={styles.item__inner}>
                     <p className={styles.item__thumbnail}>
                       <Image className={styles.item__image} src="/images/ogimage-desicco.png" alt="thumbnail" width={1200} height={630} />
