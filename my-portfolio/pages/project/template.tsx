@@ -3,6 +3,8 @@ import Main from "../../components/Main"
 import Footer from "../../components/Footer"
 import Button from "../../components/Button"
 import Content from "../../components/Content"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Template() {
   return (
@@ -11,7 +13,7 @@ export default function Template() {
       <Main>
         <Content>
           <h1>h1です</h1>
-          <p>概要です。ここに<strong>strong</strong>。ここに<b>bold</b>。ここに<a href="/">link</a>。</p>
+          <p>概要です。ここに<strong>strong</strong>。ここに<b>bold</b>。ここに<Link href="/">link</Link>。</p>
           <section>
             <h2>h2です</h2>
             <p>こんにちは</p>
@@ -35,7 +37,7 @@ export default function Template() {
             <h2>h2</h2>
             <p>テスト</p>
             <figure>
-              <img src="https://placehold.jp/1250x50.png" alt="test" />
+              <Image src="https://placehold.jp/1250x50.png" alt="test" width={1250} height={50} />
               <figcaption>test</figcaption>
             </figure>
             <p>あはは</p>
