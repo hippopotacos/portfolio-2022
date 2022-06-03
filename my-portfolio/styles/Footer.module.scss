@@ -1,7 +1,27 @@
 .footer {
+  padding: 0 20px 32px;
+  margin: 0 auto;
+  width: 800px;
+  max-width: 100%;
+}
+
+.footer__embed {
+  margin: 0 auto;
+  width: 480px;
+  max-width: 100%;
+}
+
+.footer__copyright {
+  display: block;
+  width: 100%;
   font-size: 1.2rem;
+  text-align: right;
 }
 
 main + .footer {
-  margin-top: 20px;
+  margin-top: 108px;
+}
+
+.footer__embed + .footer__text {
+  margin-top: 40px;
 }
