@@ -15,7 +15,9 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.header__inner}>
           <Link href="/">
-            <Logo />
+            <a>
+              <Logo />
+            </a>
           </Link>
           <button type="button" className={styles.header__button} onClick={ () => {setDrawer(!drawer)} }>{drawer ? 'CLOSE' : 'MENU'}</button>
           <nav className={`${styles.header__nav} ${drawer ? styles.active : ''}`}>

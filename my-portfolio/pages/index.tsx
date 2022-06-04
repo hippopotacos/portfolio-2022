@@ -5,8 +5,9 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 import Image from 'next/image';
 import Button from "../components/Button";
+import { client } from "../libs/client"
 
-export default function Home() {
+export default function Home({ works }) {
   return (
     <>
       <Header />
@@ -29,50 +30,19 @@ export default function Home() {
           <div className={styles.section__inner}>
             <p className={styles.section}>※株式会社アンクシステムズでの制作実績は除く</p>
             <ul className={styles.items}>
-              <li className={styles.item}>
-                <Link href="/project/beginner">
-                  <div className={styles.item__inner}>
-                    <p className={styles.item__thumbnail}>
-                      <Image className={styles.item__image} src="/images/ogimage.png" alt="thumbnail" width={1200} height={630} />
-                    </p>
-                    <p className={styles.item__title}>このポートフォリオサイトについて</p>
-                    <p className={styles.item__date}>2022.05</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.item}>
-                <Link href="/project/beginner">
-                  <div className={styles.item__inner}>
-                    <p className={styles.item__thumbnail}>
-                      <Image className={styles.item__image} src="/images/ogimage-internet.png" alt="thumbnail" width={1200} height={630} />
-                    </p>
-                    <p className={styles.item__title}>はじめてのインターネット</p>
-                    <p className={styles.item__date}>2022.01</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.item}>
-                <Link href="/">
-                  <div className={styles.item__inner}>
-                    <p className={styles.item__thumbnail}>
-                      <Image className={styles.item__image} src="/images/ogimage-kentonakahara.png" alt="thumbnail" width={1200} height={630} />
-                    </p>
-                    <p className={styles.item__title}>Kento Nakahara</p>
-                    <p className={styles.item__date}>2021.06</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.item}>
-                <Link href="/">
-                  <div className={styles.item__inner}>
-                    <p className={styles.item__thumbnail}>
-                      <Image className={styles.item__image} src="/images/ogimage-desicco.png" alt="thumbnail" width={1200} height={630} />
-                    </p>
-                    <p className={styles.item__title}>desicco</p>
-                    <p className={styles.item__date}>2018.07</p>
-                  </div>
-                </Link>
-              </li>
+              {works.map((works) => (
+                <li key={works.id} className={styles.item}>
+                  <Link href={`/works/${works.id}`}>
+                    <a className={styles.item__inner}>
+                      <p className={styles.item__thumbnail}>
+                        <Image className={styles.item__image} src={works.thumbnail.url} alt="thumbnail" width={works.thumbnail.width} height={works.thumbnail.height} />
+                      </p>
+                      <p className={styles.item__title}>{works.title}</p>
+                      <p className={styles.item__date}>{works.releaseDay}</p>
+                    </a>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </section>
@@ -308,3 +278,14 @@ export default function Home() {
     </>
   );
 }
+
+// データをテンプレートに受け渡す部分の処理を記述します
+export const getStaticProps = async () => {
+  const data = await client.get({ endpoint: "works" });
+
+  return {
+    props: {
+      works: data.contents
+    }
+  };
+};
