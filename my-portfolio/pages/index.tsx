@@ -112,6 +112,7 @@ export default function Home({ works }) {
                         <tr className={styles.group__item}>
                           <td className={styles.group__category}>Design</td>
                           <td className={styles.group__description}>
+                            <p>いずれも新規デザイン提案はなし</p>
                             <p>Photoshop/Illustrator/XD</p>
                             <p>以下は実務経験なし（自主的な学習）</p>
                             <p>Figma/Sketch/After Effect/Premiere Pro</p>
