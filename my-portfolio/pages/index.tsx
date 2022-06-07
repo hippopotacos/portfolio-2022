@@ -74,22 +74,51 @@ export default function Home({ works }) {
                       <li>品質・コスト・納期を天秤にかけて解決策を練る</li>
                       <li>複数案件のスケジュール調整、優先順位づけ</li>
                       <li>社外・他職種とのコミュニケーション</li>
+                      <li>（下請け企業など）同職種への作業依頼</li>
                       <li>Photoshop、Illustrator、XDをデザインカンプとしたWebページ制作</li>
-                      <li>デザイナーが不在時でのビジュアルの提案</li>
-                      <li>HTML、CSSによるコンテンツやビジュアルの構築</li>
-                      <li>SassなどのCSSプリプロセッサを用いた開発</li>
+                      <li>スマートフォンやタブレットなどに対応したレスポンシブでの実装</li>
                       <li>BEMなどのCSS設計を用いた実装</li>
                       <li>JavaScript、CSSによるアニメーションの実装</li>
-                      <li>スマートフォンやタブレットなどに対応したレスポンシブでの実装</li>
-                      <li>JavaScript、Ajaxを用いた動的なウェブサイトの構築</li>
-                      <li>npm、yarnなどのパッケージマネージャの使用</li>
-                      <li>Webpack、Gulpなどを利用したフロントエンドの開発</li>
-                      <li>Gitを用いたバージョン管理ツールでの業務</li>
-                      <li>WordPress、MovableTypeなどのCMSを用いた実務経験</li>
-                      <li>React、Next.jsを用いた開発</li>
-                      <li>TypeScriptを用いた開発</li>
-                      <li>Photoshop、Illustrator、Figmaを利用したビジュアル作成（実務経験なし）</li>
+                      <li>デザイナーが不在時でのビジュアルの提案</li>
                     </ul>
+                  </div>
+                  <div className={styles.group__inner}>
+                    <table className={styles.group__list}>
+                      <tbody>
+                        <tr className={styles.group__item}>
+                          <td className={styles.group__category}>Languages</td>
+                          <td className={styles.group__description}>
+                            <p>HTML/CSS/SCSS/JavaScript/TypeScript/EJS/Pug/PHP</p>
+                            <p>以下は実務経験なし（学生時代の経験）</p>
+                            <p>C/C++/C#/Perl/Java</p>
+                          </td>
+                        </tr>
+                        <tr className={styles.group__item}>
+                          <td className={styles.group__category}>Libraries & Frameworks</td>
+                          <td className={styles.group__description}>
+                            <p>jQuery/React/Next.js/Tailwind.css/Bootstrap</p>
+                            <p>以下は実務経験なし（自主的な学習）</p>
+                            <p>Vue.js/Nuxt.js/Gatsby.js/Lottie</p>
+                          </td>
+                        </tr>
+                        <tr className={styles.group__item}>
+                          <td className={styles.group__category}>Tools & Platforms</td>
+                          <td className={styles.group__description}>
+                            <p>Git/GitHub/Backlog/Gulp/webpack/Docker/WordPress/MovableType/SHIRASAGI/Google Analytics/Google Tag Manager/Microsoft Teams/Microsoft SharePoint/Slack/Chatwork</p>
+                            <p>以下は実務経験なし（自主的な学習）</p>
+                            <p>Vercel/Netlify/MicroCMS/Contentful/Storybook</p>
+                          </td>
+                        </tr>
+                        <tr className={styles.group__item}>
+                          <td className={styles.group__category}>Design</td>
+                          <td className={styles.group__description}>
+                            <p>Photoshop/Illustrator/XD</p>
+                            <p>以下は実務経験なし（自主的な学習）</p>
+                            <p>Figma/Sketch/After Effect/Premiere Pro</p>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
                 <div className={styles.group}>
