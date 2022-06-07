@@ -71,12 +71,13 @@ export default function Home({ works }) {
                   <h2>Can</h2>
                   <div className={styles.group__inner}>
                     <ul>
-                      <li>品質・コスト・納期を天秤にかけて解決策を練る</li>
+                      <li>何もない状態からの新規実装（環境設定、コーディング、リリース）</li>
+                      <li>Adobe Photoshop、Illustrator、XDをデザインカンプとしたWebページ制作</li>
+                      <li>スマートフォンやタブレットなどに対応したレスポンシブでの実装</li>
+                      <li>品質・コスト・納期を天秤にかけて解決策を練ること</li>
                       <li>複数案件のスケジュール調整、優先順位づけ</li>
                       <li>社外・他職種とのコミュニケーション</li>
-                      <li>（下請け企業など）同職種への作業依頼</li>
-                      <li>Photoshop、Illustrator、XDをデザインカンプとしたWebページ制作</li>
-                      <li>スマートフォンやタブレットなどに対応したレスポンシブでの実装</li>
+                      <li>同職種への作業依頼や共同での開発</li>
                       <li>BEMなどのCSS設計を用いた実装</li>
                       <li>JavaScript、CSSによるアニメーションの実装</li>
                       <li>デザイナーが不在時でのビジュアルの提案</li>
