@@ -77,7 +77,7 @@ export default function Home({ works }) {
                       <li>Photoshop、Illustrator、XDをデザインカンプとしたWebページ制作</li>
                       <li>デザイナーが不在時でのビジュアルの提案</li>
                       <li>HTML、CSSによるコンテンツやビジュアルの構築</li>
-                      <li>SASSなどのCSSプリプロセッサを用いた開発</li>
+                      <li>SassなどのCSSプリプロセッサを用いた開発</li>
                       <li>BEMなどのCSS設計を用いた実装</li>
                       <li>JavaScript、CSSによるアニメーションの実装</li>
                       <li>スマートフォンやタブレットなどに対応したレスポンシブでの実装</li>
