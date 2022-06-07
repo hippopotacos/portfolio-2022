@@ -5,10 +5,23 @@ import Button from "../../components/Button"
 import Content from "../../components/Content"
 import { client } from '../../libs/client'
 import Image from "next/image"
+import Head from "next/head"
 
 export default function Template({ works }) {
   return (
     <>
+      <Head>
+        <title>{works.title} - Kazunori MATSUNAGA Portfolio</title>
+        <meta name="description" content={works.overview} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={`https://www.kazunorimatsunaga.com/works/${works.id}`} />
+        <meta property="og:title" content={`${works.title} - Kazunori MATSUNAGA Portfolio`} />
+        <meta property="og:description" content={works.overview} />
+        <meta property="og:site_name" content="Kazunori MATSUNAGA" />
+        <meta property="og:image" content={works.keyVisual.url} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="shortcut icon" href="/images/favicon.svg" />
+      </Head>
       <Header />
       <Main>
         <Content>
