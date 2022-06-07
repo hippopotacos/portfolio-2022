@@ -248,7 +248,7 @@ export default function Home({ works }) {
                       <tr className={styles.group__item}>
                         <td className={styles.group__term}>2013.09</td>
                         <td className={styles.group__description}>
-                          <span className={styles.group__name}>普通自動車免許(AT限定)</span>
+                          <span className={styles.group__name}>普通自動車第一種運転免許（AT限定）取得</span>
                         </td>
                       </tr>
                     </tbody>
