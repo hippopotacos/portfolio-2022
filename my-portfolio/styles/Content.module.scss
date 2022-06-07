@@ -1,100 +1,116 @@
 .wrapper {
   margin-bottom: 80px;
 
-  h1 {
-    font-size: 3.2rem;
-  }
-  
-  h1 + .section__inner {
-    margin-top: 32px;
-  }
-  
-  h2 {
+  h1:not([class]) {
     position: relative;
+    z-index: -1;
+    font-size: 3.2rem;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 120px;
+      margin-top: -120px;
+      visibility: hidden,
+    }
+
+    + .section__inner {
+      margin-top: 32px;
+    }
+  }
+
+  h2:not([class]) {
+    position: relative;
+    z-index: -1;
     padding-left: 16px;
     font-size: 2.4rem;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 120px;
+      margin-top: -120px;
+      visibility: hidden,
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 120px;
+      width: 4px;
+      height: 36px;
+      background-color: var(--var-primary);
+    }
+
+    + * {
+      margin-top: 32px;
+    }
+  }
+
+  h3:not([class]) {
+    + * {
+      margin-top: 24px;
+    }
   }
   
-  h2::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 4px;
-    height: 100%;
-    background-color: var(--var-primary);
-  }
-  
-  h2 + .unit,
-  h2 + .group__list,
-  h2 + .group__inner {
-    margin-top: 32px;
-  }
-  
-  ul {
+  ul:not([class]) {
     margin-top: 12px;
+
+    > li {
+      position: relative;
+      padding-left: 1.5em;
+      list-style: none;
+    }
+
+    > li::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 9px;
+      left: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--var-primary);
+    }
   }
   
-  ul > li {
-    position: relative;
-    padding-left: 1.5em;
-    list-style: none;
-  }
-  
-  ul > li::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 9px;
-    left: 4px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--var-primary);
-  }
-
-  figure {
-
-  }
-
-  figcaption {
-    text-align: center;
-  }
-
-  dl {
+  dl:not([class]) {
     padding: 24px;
     border-radius: 4px;
     color: var(--var-black);
     background-color: var(--var-white);
-  }
 
-  dl > div {
-    display: flex;
-  }
+    > div {
+      display: flex;
+    }
 
-  dl > div:not(:first-child) {
-    margin-top: 8px;
-  }
+    > div:not(:first-child) {
+      margin-top: 8px;
+    }
 
-  dl > div dt {
-    width: 100px;
-    font-weight: bold;
-  }
+    > div dt {
+      width: 100px;
+      font-weight: bold;
+    }
 
-  dl > div dd {
-    margin: 0 0 0 16px;
-    width: calc(100% - 100px - 16px);
-    overflow-wrap: break-word;
+    > div dd {
+      margin: 0 0 0 16px;
+      width: calc(100% - 100px - 16px);
+      overflow-wrap: break-word;
+    }
   }
 
   > * + *,
-  section > * + *,
-  div > * + * {
+  section:not([class]) > *:not([class]) + *:not([class]) {
     margin-top: 20px;
   }
 
-  h1, h2, h3 {
+  h1:not([class]),
+  h2:not([class]),
+  h3:not([class]) {
     margin-top: 56px;
   }
 }
@@ -103,20 +119,36 @@
   .wrapper {
     font-size: 1.4rem;
     
-    h1 {
+    h1:not([class]) {
       font-size: 2.4rem;
     }
 
-    h2 {
+    h2:not([class]) {
       font-size: 2.0rem;
+
+      &::after {
+        top: 121px;
+        height: 30px;
+      }
     }
 
-    h3 {
+    h3:not([class]) {
       font-size: 1.6rem;
     }
 
-    h1, h2, h3 {
+    h1:not([class]),
+    h2:not([class]),
+    h3:not([class]) {
       margin-top: 40px;
+    }
+
+    ul:not([class]) {
+      > li::before {
+        top: 7px;
+        left: 4px;
+        width: 5px;
+        height: 5px;
+      }
     }
   }
 }

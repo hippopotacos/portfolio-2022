@@ -1,0 +1,42 @@
+.contact {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.contact__text {
+  text-align: center;
+}
+
+.contact__text + .sns {
+  margin-top: 16px;
+}
+
+
+
+.sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.sns__item,
+.sns__item a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.sns__item:not(:first-child) {
+  margin-left: 32px;
+}
+
+.sns + .contact__text {
+  margin-top: 40px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .sns__item a:hover {
+    opacity: 1;
+	}
+}
