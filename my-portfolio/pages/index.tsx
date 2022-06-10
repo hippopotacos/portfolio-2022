@@ -77,10 +77,12 @@ export default function Home({ works }) {
                       <li>品質・コスト・納期を天秤にかけて解決策を練ること</li>
                       <li>複数案件のスケジュール調整、優先順位づけ</li>
                       <li>社外・他職種とのコミュニケーション</li>
-                      <li>同職種への作業依頼や共同での開発</li>
+                      <li>同職種への作業依頼や共同開発</li>
                       <li>BEMなどのCSS設計を用いた実装</li>
                       <li>JavaScript、CSSによるアニメーションの実装</li>
                       <li>デザイナーが不在時でのビジュアルの提案</li>
+                      <li>API設計書を書いてバックエンドに共有</li>
+                      <li>入ったプロジェクトのコーディングルールにしたがう</li>
                     </ul>
                   </div>
                   <div className={styles.group__inner}>
@@ -89,34 +91,30 @@ export default function Home({ works }) {
                         <tr className={styles.group__item}>
                           <td className={styles.group__category}>Languages</td>
                           <td className={styles.group__description}>
-                            <p>HTML/CSS/SCSS/JavaScript/TypeScript/EJS/Pug/PHP</p>
-                            <p>以下は実務経験なし（学生時代の経験）</p>
-                            <p>C/C++/C#/Perl/Java</p>
+                            <p><b>HTML/CSS/SCSS/JavaScript/TypeScript/EJS/Pug/PHP</b></p>
+                            <p>実務経験なし: C/C++/C#/Perl/Java</p>
                           </td>
                         </tr>
                         <tr className={styles.group__item}>
                           <td className={styles.group__category}>Libraries & Frameworks</td>
                           <td className={styles.group__description}>
-                            <p>jQuery/React/Next.js/Tailwind.css/Bootstrap</p>
-                            <p>以下は実務経験なし（自主的な学習）</p>
-                            <p>Vue.js/Nuxt.js/Gatsby.js/Lottie</p>
+                            <p><b>jQuery/React/Next.js/Tailwind.css/Bootstrap</b></p>
+                            <p>実務経験なし: Vue.js/Nuxt.js/Lottie</p>
                           </td>
                         </tr>
                         <tr className={styles.group__item}>
                           <td className={styles.group__category}>Tools & Platforms</td>
                           <td className={styles.group__description}>
-                            <p>Git/GitHub/Backlog/Gulp/webpack/Docker/WordPress/MovableType/SHIRASAGI/Google Analytics/Google Tag Manager/Microsoft Teams/Microsoft SharePoint/Slack/Chatwork</p>
-                            <p>以下は実務経験なし（自主的な学習）</p>
-                            <p>Vercel/Netlify/MicroCMS/Contentful/Storybook</p>
+                            <p><b>Git/GitHub/Backlog/Gulp/webpack/Docker/WordPress/MovableType/SHIRASAGI/Google Analytics/Google Tag Manager/Microsoft SharePoint/Microsoft Teams/Slack/Chatwork</b></p>
+                            <p>実務経験なし: Vercel/Netlify/MicroCMS/Storybook</p>
                           </td>
                         </tr>
                         <tr className={styles.group__item}>
                           <td className={styles.group__category}>Design</td>
                           <td className={styles.group__description}>
-                            <p>いずれも新規デザイン提案はなし</p>
-                            <p>Photoshop/Illustrator/XD</p>
-                            <p>以下は実務経験なし（自主的な学習）</p>
-                            <p>Figma/Sketch/After Effect/Premiere Pro</p>
+                            <p><b>Adobe Photoshop/Adobe Illustrator/Adobe XD</b></p>
+                            <p>実務経験なし: Figma/Sketch/Adobe After Effect/Adobe Premiere Pro</p>
+                            <p><small>※いずれも新規デザイン提案はなし</small></p>
                           </td>
                         </tr>
                       </tbody>
@@ -150,7 +148,9 @@ export default function Home({ works }) {
                             <ul>
                               <li>クライアントや社内における約30のプロジェクトで、Web制作に従事</li>
                               <li>HTML、CSS、JavaScriptを基礎とし、SCSS、TypeScript、jQuery、React、Next.js、WordPressなど、さまざまな言語・ライブラリ・フレームワーク・CMSを利用</li>
-                              <li>クライアント含め、エンジニア、デザイナー、プロデューサーなど、さまざまな職種とチームで日常的にコミュニケーションをとる</li>
+                              <li>クライアント含め、エンジニア、デザイナー、プロデューサーなど、さまざまな職種と日常的にコミュニケーションをとる</li>
+                              <li>新入社員の教育（OJTや社内報告のサポート）</li>
+                              <li>ソースコードのレビュー</li>
                             </ul>
                           </div>
                         </td>
@@ -186,8 +186,7 @@ export default function Home({ works }) {
                             <ul>
                               <li>UI/UXデザイナーの養成スクールに参加</li>
                               <li>デザイン基礎講義(レイアウト・ツール・配色・タイポグラフィ)の受講</li>
-                              <li>Webサイト(イベント)のデザイン作成とフィードバック</li>
-                              <li>iOSアプリ(美術館めぐりアプリ)のデザイン作成とフィードバック</li>
+                              <li>デザイン作成とフィードバック</li>
                             </ul>
                           </div>
                         </td>
