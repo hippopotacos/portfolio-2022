@@ -1,6 +1,10 @@
 import styles from '../styles/Content.module.scss'
 
-export default function Content({children}) {
+interface Props {
+  children: React.ReactNode
+}
+
+export default function Content( {children}: Props ) {
   return (
     <>
       <div className={styles.wrapper}>

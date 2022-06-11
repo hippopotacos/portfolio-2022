@@ -7,9 +7,8 @@ import { client } from '../../libs/client'
 import Image from "next/image"
 import Head from "next/head"
 import { GetStaticPaths, GetStaticProps } from "next"
-import { Post } from "../../types/Post"
 
-export default function Template({ works }: { works: Post }) {
+export default function Template({ works }: { works: any }) {
   return (
     <>
       <Head>
@@ -73,7 +72,7 @@ export default function Template({ works }: { works: Post }) {
 export const getStaticPaths: GetStaticPaths = async () => {
   const data = await client.get({ endpoint: "works" })
 
-  const paths = data.contents.map((content) => `/works/${content.id}`)
+  const paths = data.contents.map((content: any) => `/works/${content.id}`)
   return { paths, fallback: false }
 }
 

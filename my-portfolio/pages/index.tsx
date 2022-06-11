@@ -10,9 +10,8 @@ import Introduction from "../components/Introduction"
 import Contact from "../components/Contact"
 import Head from "next/head"
 import { GetStaticProps } from "next"
-import { Post } from "../types/Post"
 
-export default function Home({ works }: { works: Post}) {
+export default function Home({ works }: { works: any }) {
   return (
     <>
       <Head>
@@ -36,7 +35,7 @@ export default function Home({ works }: { works: Post}) {
             <div className={styles.section__inner}>
               <p>※株式会社アンクシステムズでの制作実績は除く</p>
               <ul className={styles.items}>
-                {works.map((works) => (
+                {works.map((works: any) => (
                   <li key={works.id} className={styles.item}>
                     <Link href={`/works/${works.id}`}>
                       <a className={styles.item__inner}>
