@@ -1,10 +1,10 @@
-import Head from "next/head";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Content from "../components/Content";
-import Image from "next/image";
-import Button from "../components/Button";
-import Footer from "../components/Footer";
+import Head from "next/head"
+import Header from "../components/Header"
+import Main from "../components/Main"
+import Content from "../components/Content"
+import Image from "next/image"
+import Button from "../components/Button"
+import Footer from "../components/Footer"
 
 export default function Custom404() {
   return (

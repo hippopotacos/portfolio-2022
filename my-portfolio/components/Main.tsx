@@ -1,6 +1,10 @@
 import styles from "../styles/Main.module.scss"
 
-export default function Main({children}) {
+interface Props {
+  children: React.ReactNode
+}
+
+export default function Main({children}: Props) {
   return (
     <>
       <main className={styles.main}>
@@ -11,5 +15,5 @@ export default function Main({children}) {
         </div>
       </main>
     </>
-  );
+  )
 }

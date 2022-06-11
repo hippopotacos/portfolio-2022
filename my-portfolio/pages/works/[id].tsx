@@ -6,8 +6,10 @@ import Content from "../../components/Content"
 import { client } from '../../libs/client'
 import Image from "next/image"
 import Head from "next/head"
+import { GetStaticPaths, GetStaticProps } from "next"
+import { Post } from "../../types/Post"
 
-export default function Template({ works }) {
+export default function Template({ works }: { works: Post }) {
   return (
     <>
       <Head>
@@ -68,21 +70,21 @@ export default function Template({ works }) {
 }
 
 // 静的生成のためのパスを指定します
-export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "works" });
+export const getStaticPaths: GetStaticPaths = async () => {
+  const data = await client.get({ endpoint: "works" })
 
-  const paths = data.contents.map((content) => `/works/${content.id}`);
-  return { paths, fallback: false };
-};
+  const paths = data.contents.map((content) => `/works/${content.id}`)
+  return { paths, fallback: false }
+}
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async (context) => {
-  const id = context.params.id;
-  const data = await client.get({ endpoint: "works", contentId: id });
+export const getStaticProps: GetStaticProps = async (context: any) => {
+  const id = context.params.id
+  const data = await client.get({ endpoint: "works", contentId: id })
 
   return {
     props: {
       works: data,
     },
-  };
+  }
 };

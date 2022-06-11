@@ -1,14 +1,14 @@
-import Logo from "./Logo";
-import styles from "../styles/Header.module.scss";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+import Logo from "./Logo"
+import styles from "../styles/Header.module.scss"
+import Link from "next/link"
+import { useEffect, useState } from "react"
 
 export default function Header() {
-  const [drawer, setDrawer] = useState(false);
+  const [drawer, setDrawer] = useState(false)
 
   useEffect(()=>{
-    setDrawer(false);
-  }, []);
+    setDrawer(false)
+  }, [])
 
   return (
     <>
@@ -36,5 +36,5 @@ export default function Header() {
         </div>
       </header>
     </>
-  );
+  )
 }

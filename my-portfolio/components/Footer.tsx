@@ -1,6 +1,10 @@
-import styles from "../styles/Footer.module.scss";
+import styles from "../styles/Footer.module.scss"
 
-export default function Footer(props) {
+interface Props {
+  playlist?: boolean
+}
+
+export default function Footer(props: Props) {
   return (
     <>
       <footer className={styles.footer}>
@@ -13,5 +17,5 @@ export default function Footer(props) {
         </p>
       </footer>
     </>
-  );
+  )
 }

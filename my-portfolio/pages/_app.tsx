@@ -1,7 +1,8 @@
+import { AppProps } from 'next/app'
 import '../styles/reset.scss'
 import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Component {...pageProps} />
@@ -9,4 +10,4 @@ function MyApp({ Component, pageProps }) {
   );
 }
 
-export default MyApp
+export default App

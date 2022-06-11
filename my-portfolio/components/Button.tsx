@@ -1,6 +1,11 @@
 import styles from "../styles/Button.module.scss"
 
-export default function Button({children, href}) {
+interface Props {
+  children: React.ReactNode
+  href: string
+}
+
+export default function Button({children, href}: Props) {
   return (
     <>
       <div className={styles.button}>
@@ -9,5 +14,5 @@ export default function Button({children, href}) {
         </a>
       </div>
     </>
-  );
+  )
 }

@@ -1,16 +1,18 @@
 import styles from "../styles/Home.module.scss"
-import Header from "../components/Header";
-import Main from '../components/Main';
-import Footer from "../components/Footer";
-import Link from "next/link";
-import Image from 'next/image';
+import Header from "../components/Header"
+import Main from '../components/Main'
+import Footer from "../components/Footer"
+import Link from "next/link"
+import Image from 'next/image'
 import { client } from "../libs/client"
-import Content from "../components/Content";
-import Introduction from "../components/Introduction";
-import Contact from "../components/Contact";
-import Head from "next/head";
+import Content from "../components/Content"
+import Introduction from "../components/Introduction"
+import Contact from "../components/Contact"
+import Head from "next/head"
+import { GetStaticProps } from "next"
+import { Post } from "../types/Post"
 
-export default function Home({ works }) {
+export default function Home({ works }: { works: Post}) {
   return (
     <>
       <Head>
@@ -303,7 +305,7 @@ export default function Home({ works }) {
 }
 
 // データをテンプレートに受け渡す部分の処理を記述します
-export const getStaticProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const data = await client.get({ endpoint: "works" });
 
   return {
