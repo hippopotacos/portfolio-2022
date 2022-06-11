@@ -8,7 +8,7 @@
 }
 
 .contact__text + .sns {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 }
 
 
@@ -28,11 +28,11 @@
 }
 
 .sns__item:not(:first-child) {
-  margin-left: 32px;
+  margin-left: 3.2rem;
 }
 
 .sns + .contact__text {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 @media (hover: hover) and (pointer: fine) {

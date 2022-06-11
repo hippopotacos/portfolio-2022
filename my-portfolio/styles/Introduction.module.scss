@@ -5,7 +5,7 @@
 }
 
 .introduction__text {
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 
 .introduction__group {
@@ -37,8 +37,8 @@
   justify-content: space-between;
   position: absolute;
   top: 0;
-  right: 20px;
-  padding: 24px 0;
+  right: 2rem;
+  padding: 2.4rem 0;
   width: auto;
   height: 100%;
   writing-mode: vertical-rl;
@@ -56,11 +56,11 @@
   content: '';
   display: inline-block;
   position: absolute;
-  bottom: -18px;
-  left: -2px;
+  bottom: -1.8rem;
+  left: -0.2rem;
   transform: rotate(90deg);
-  width: 14px;
-  height: 14px;
+  width: 1.4rem;
+  height: 1.4rem;
   background-image: url(/images/arrow_outward_black.svg);
   background-size: cover;
 }

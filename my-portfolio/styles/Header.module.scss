@@ -2,7 +2,7 @@
   position: sticky;
   z-index: var(--var-index-header);
   top: 0;
-  padding: 32px 20px;
+  padding: 3.2rem 2rem;
   margin: 0 auto;
   width: 800px;
   max-width: 100%;
@@ -24,28 +24,28 @@
 }
 
 .header__item {
-  font-size: 2.0rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 .header__item a {
-  padding: 4px 0;
+  padding: .4rem 0;
   text-decoration: none;
 }
 
 .header + main {
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 
 @media (min-width: 768px) {
   .header__item:not(:first-child) {
-    margin-left: 20px;
+    margin-left: 2rem;
   }
 }
 
 @media not all and (min-width: 768px) {
   .header__item:not(:first-child) {
-    margin-top: 20px;
+    margin-top: 2rem;
   }
 }
 
@@ -64,10 +64,10 @@
 .header__button {
   position: fixed;
   z-index: 250;
-  top: 34px;
-  right: 20px;
-  padding: 11px;
-  width: 80px;
+  top: 3.4rem;
+  right: 2rem;
+  padding: 1.1rem;
+  width: 8rem;
   max-width: 100%;
   border: 1px solid var(--var-primary);
   border-radius: 4px;
@@ -95,7 +95,6 @@
     padding: 0;
     width: 1px;
     height: 1px;
-
     position: absolute;
     top: 0;
     left: 0;
@@ -108,8 +107,8 @@
     display: block;
     position: absolute;
     top: 0;
-    left: 6px;
-    width: 4px;
+    left: .6rem;
+    width: .4rem;
     height: 100vh;
     background-color: var(--var-white);
   }
@@ -119,8 +118,8 @@
     visibility: visible;
     clip: auto;
     clip-path: none;
-    padding: 128px 32px 20px;
-    width: 200px;
+    padding: 12.8rem 3.2rem 2rem;
+    width: 20rem;
     height: 100vh;
     left: auto;
     right: 0;

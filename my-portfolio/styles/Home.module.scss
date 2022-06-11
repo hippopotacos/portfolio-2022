@@ -79,7 +79,7 @@
 
 
 .group__list {
-  padding: 0 16px;
+  padding: 0 1.6rem;
   list-style: none;
 }
 
@@ -88,7 +88,7 @@
 }
 
 .group__item:not(:first-child) {
-  margin-top: 32px;
+  margin-top: 3.2rem;
 }
 
 .group__term {
@@ -119,21 +119,21 @@
 
 .group__position {
   display: block;
-  margin-top: 4px;
+  margin-top: .4rem;
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--var-primary);
 }
 
 .group__type + .group__name {
-  margin-left: 6px;
+  margin-left: .6rem;
 }
 
 .group__inner + .group__inner {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 }
 
 p + .group,
 .group + .group {
-  margin-top: 48px;
+  margin-top: 4.8rem;
 }
