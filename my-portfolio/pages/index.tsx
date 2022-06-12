@@ -295,7 +295,7 @@ export default function Home({ works }: { works: any }) {
           {/* Contact end */}
         </Content>
       </Main>
-      <Footer playlist />
+      <Footer />
     </>
   );
 }
