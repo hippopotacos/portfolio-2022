@@ -7,7 +7,7 @@ export default function Introduction() {
       <div className={styles.introduction}>
         <div className={styles.introduction__group}>
           <figure className={styles.introduction__figure}>
-            <Image className={styles.introduction__image} src="/images/portrait.jpeg" alt="Kazunori MATSUNAGA" width={640} height={818} />
+            <Image className={styles.introduction__image} src="/images/portrait.jpeg" alt="Kazunori MATSUNAGAのポートレート" width={640} height={818} />
             <figcaption className={styles.introduction__caption}>
               <a className={styles.introduction__comment} href="https://goo.gl/maps/Rfb5FRKv5XGdDosNA" target="_blank" rel="noopener noreferrer">@colombo cornershop</a>
               <p className={styles.introduction__date}>2022.04.29</p>
