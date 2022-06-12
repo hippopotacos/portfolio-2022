@@ -1,8 +1,9 @@
 :root {
-  --var-primary: #51fbaa;
-  --var-black: #333;
-  --var-white: #fff;
-  --var-index-header: 100;
+  --color-primary: #51fbaa;
+  --color-black: #333;
+  --color-white: #fff;
+  --index-header: 100;
+  --index-header-button: 101;
 }
 
 html {
@@ -17,8 +18,8 @@ body {
   letter-spacing: .025em;
   line-height: 1.5;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-  background-color: var(--var-black);
-  color: var(--var-white);
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 a {
