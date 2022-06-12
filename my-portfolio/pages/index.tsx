@@ -40,7 +40,11 @@ export default function Home({ works }: { works: any }) {
                     <Link href={`/works/${works.id}`}>
                       <a className={styles.item__inner}>
                         <p className={styles.item__thumbnail}>
-                          <Image className={styles.item__image} src={works.thumbnail.url} alt="thumbnail" width={works.thumbnail.width} height={works.thumbnail.height} />
+                          {
+                            works.keyVisual ?
+                            <Image className={styles.item__image} src={works.thumbnail.url} alt={`${works.title}のサムネイル`} width={works.thumbnail.width} height={works.thumbnail.height} /> :
+                            <Image className={styles.item__image} src="/images/noimage.png" alt={`${works.title}のサムネイル`} width={1200} height={630} />
+                          }
                         </p>
                         <p className={styles.item__title}>{works.title}</p>
                         <p className={styles.item__date}>{works.releaseDay}</p>

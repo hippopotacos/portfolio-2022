@@ -19,7 +19,7 @@ export default function Template({ works }: { works: any }) {
         <meta property="og:title" content={`${works.title} - Kazunori MATSUNAGA Portfolio`} />
         <meta property="og:description" content={works.overview} />
         <meta property="og:site_name" content="Kazunori MATSUNAGA" />
-        <meta property="og:image" content={works.keyVisual.url} />
+        <meta property="og:image" content={works.keyVisual ? works.keyVisual.url : "https://www.kazunorimatsunaga.com/images/ogimage.png"} />
         <meta name="twitter:card" content="summary_large_image" />
         <link rel="shortcut icon" href="/images/favicon.svg" />
       </Head>
@@ -27,37 +27,59 @@ export default function Template({ works }: { works: any }) {
       <Main>
         <Content>
           <div>
-            <Image src={works.keyVisual.url} alt="main visual" width={works.keyVisual.width} height={works.keyVisual.height} />
+            {
+              works.keyVisual ?
+              <Image src={works.keyVisual.url} alt={`${works.title}のキービジュアル`} width={works.keyVisual.width} height={works.keyVisual.height} /> :
+              <Image src="/images/noimage.png" alt={`${works.title}のキービジュアル`} width={1200} height={630} />
+            }
           </div>
           <h1>{works.title}</h1>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `${works.overview}`,
-            }}
-          />
+          {
+            works.overview &&
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${works.overview}`,
+              }}
+            />
+          }
           <dl>
-            <div>
-              <dt>URL</dt>
-              <dd><a href={works.url} target="_blank" rel="noopener noreferrer">{works.url}</a></dd>
-            </div>
-            <div>
-              <dt>期間</dt>
-              <dd>{works.term}</dd>
-            </div>
-            <div>
-              <dt>役割</dt>
-              <dd>{works.role}</dd>
-            </div>
-            <div>
-              <dt>技術・ツール</dt>
-              <dd>{works.tools}</dd>
-            </div>          
+            {
+              works.url &&
+              <div>
+                <dt>URL</dt>
+                <dd><a href={works.url} target="_blank" rel="noopener noreferrer">{works.url}</a></dd>
+              </div> 
+            }
+            {
+              works.term &&
+              <div>
+                <dt>期間</dt>
+                <dd>{works.term}</dd>
+              </div>
+            }
+            {
+              works.role &&
+              <div>
+                <dt>役割</dt>
+                <dd>{works.role}</dd>
+              </div>
+            }
+            {
+              works.tools &&
+              <div>
+                <dt>技術・ツール</dt>
+                <dd>{works.tools}</dd>
+              </div>      
+            }    
           </dl>
-          <div
-            dangerouslySetInnerHTML={{
-              __html: `${works.body}`,
-            }}
-          />
+          {
+            works.body &&
+            <div
+              dangerouslySetInnerHTML={{
+                __html: `${works.body}`,
+              }}
+            />
+          }
         </Content>
         <Button href="/">
           TOPページにもどる
