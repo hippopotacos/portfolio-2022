@@ -1,3 +1,4 @@
+// link
 .link__outward {
   position: relative;
   margin-right: 2rem;
@@ -15,8 +16,7 @@
   background-size: cover;
 }
 
-
-
+// section
 .section {
   margin: 0 auto;
 }
@@ -30,8 +30,7 @@
   margin-top: 9.6rem;
 }
 
-
-
+// item
 .items {
   display: grid;
   grid-template-columns: repeat(2, minmax(auto, 1fr));
@@ -76,8 +75,7 @@
   }
 }
 
-
-
+// group
 .group__list {
   padding: 0 1.6rem;
   list-style: none;
@@ -136,4 +134,17 @@
 p + .group,
 .group + .group {
   margin-top: 4.8rem;
+}
+
+// hidden
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+  border: 0;
 }

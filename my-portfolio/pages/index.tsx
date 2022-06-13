@@ -29,6 +29,7 @@ export default function Home({ works }: { works: any }) {
       <Header />
       <Main>
         <Layout>
+          <h1 className={styles.hidden}>マツナガカズノリのポートフォリオサイト</h1>
           <Introduction />
           <section id="works" className={styles.section}>
             <h1>Works</h1>
@@ -59,7 +60,7 @@ export default function Home({ works }: { works: any }) {
           <section id="profile" className={styles.section}>
             <h1>Profile</h1>
             <div className={styles.section__inner}>
-              <p>松永 知典 / Kazunori MATSUNAGA<br />1993年生まれ。京都府在住、大分県出身。♨️</p>
+              <p>松永 知典 / Kazunori MATSUNAGA<br />1993年生まれ。京都府在住、大分県出身。</p>
               <div>
                 <div className={styles.group}>
                   <h2>Type</h2>
