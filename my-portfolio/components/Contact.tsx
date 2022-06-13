@@ -2,8 +2,8 @@ import styles from '../styles/Contact.module.scss'
 import Image from 'next/image'
 import Button from './Button'
 
-export default function Contact(){
-  return(
+export default function Contact() {
+  return (
     <>
       <div className={styles.contact}>
         <div className={styles.contact__text}>SNS</div>
