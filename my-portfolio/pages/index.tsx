@@ -5,7 +5,7 @@ import Footer from "../components/Footer"
 import Link from "next/link"
 import Image from 'next/image'
 import { client } from "../libs/client"
-import Content from "../components/Content"
+import Layout from "../components/Layout"
 import Introduction from "../components/Introduction"
 import Contact from "../components/Contact"
 import Head from "next/head"
@@ -28,7 +28,7 @@ export default function Home({ works }: { works: any }) {
       </Head>
       <Header />
       <Main>
-        <Content>
+        <Layout>
           <Introduction />
           <section id="works" className={styles.section}>
             <h1>Works</h1>
@@ -293,7 +293,7 @@ export default function Home({ works }: { works: any }) {
             </div>
           </section>
           {/* Contact end */}
-        </Content>
+        </Layout>
       </Main>
       <Footer />
     </>

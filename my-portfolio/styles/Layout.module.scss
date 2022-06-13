@@ -115,6 +115,32 @@
   }
 }
 
+.post {
+  a:not([class]) {
+    position: relative;
+    margin-right: 2rem;
+  }
+  
+  a:not([class])::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom: -0.1rem;
+    right: -1.5rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url(/images/arrow_outward_white.svg);
+    background-size: cover;
+  }
+
+  dl:not([class]) {
+    a:not([class])::after {
+      background-image: url(/images/arrow_outward_black.svg);
+      background-size: cover;
+    }
+  }
+}
+
 @media not all and (min-width: 768px) {
   .wrapper {
     font-size: 1.4rem;

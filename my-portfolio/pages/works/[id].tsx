@@ -2,7 +2,7 @@ import Header from "../../components/Header"
 import Main from "../../components/Main"
 import Footer from "../../components/Footer"
 import Button from "../../components/Button"
-import Content from "../../components/Content"
+import Layout from "../../components/Layout"
 import { client } from '../../libs/client'
 import Image from "next/image"
 import Head from "next/head"
@@ -25,7 +25,7 @@ export default function Template({ works }: { works: any }) {
       </Head>
       <Header />
       <Main>
-        <Content>
+        <Layout works>
           <div>
             {
               works.keyVisual ?
@@ -80,7 +80,7 @@ export default function Template({ works }: { works: any }) {
               }}
             />
           }
-        </Content>
+        </Layout>
         <Button href="/">
           TOPページにもどる
         </Button>
