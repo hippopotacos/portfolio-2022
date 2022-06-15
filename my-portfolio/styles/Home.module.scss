@@ -1,15 +1,14 @@
 // link
 .link__outward {
   position: relative;
-  margin-right: 2rem;
 }
 
 .link__outward::after {
   content: '';
   display: inline-block;
-  position: absolute;
-  bottom: -0.1rem;
-  right: -1.5rem;
+  position: relative;
+  bottom: -0.5rem;
+  right: 0rem;
   width: 1.4rem;
   height: 1.4rem;
   background-image: url(/images/arrow_outward_white.svg);
