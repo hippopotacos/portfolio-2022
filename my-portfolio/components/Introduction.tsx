@@ -14,7 +14,7 @@ export default function Introduction() {
             </figcaption>
           </figure>
         </div>
-        <p className={styles.introduction__text}>フロントエンドディベロッパー。<b>レスポンシブWebコーディングやCMS利用のWeb制作が経験豊富。大規模サイトの制作や運用実績もある。</b>興味のある領域は、ユーザーインターフェース、Webアクセシビリティ。<a href="#education">工学と芸術の学士</a>。趣味は音楽（鑑賞、演奏、制作）など。</p>
+        <p className={styles.introduction__text}>フロントエンドディベロッパー。<b>レスポンシブWebコーディングやCMS利用のWeb制作が経験豊富。中〜大規模サイトの制作や運用実績もある。</b>興味のある領域は、ユーザーインターフェース、Webアクセシビリティ。<a href="#education">工学と芸術の学士</a>。趣味は音楽（鑑賞、演奏、制作）など。</p>
       </div>
       {/* Profile end */}
     </>
