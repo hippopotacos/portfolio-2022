@@ -16,11 +16,11 @@ export default function Home({ works }: { works: any }) {
     <>
       <Head>
         <title>Kazunori MATSUNAGA</title>
-        <meta name="description" content="フロントエンドディベロッパー。レスポンシブWebコーディング・CMS利用のWeb制作が経験豊富で、大規模サイトの制作・運用実績もある。興味のある領域は、ユーザーインターフェース・Webアクセシビリティ。工学・芸術の学士。趣味は音楽（鑑賞・演奏・制作）など。" />
+        <meta name="description" content="フロントエンドディベロッパー。レスポンシブWebコーディングやCMS利用のWeb制作の経験が多め。中〜大規模サイトの制作や運用実績もあり。興味のある領域は、ユーザーインターフェース・Webアクセシビリティ。工学・芸術の学士。趣味は音楽（鑑賞・演奏・制作）など。" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.kazunorimatsunaga.com/" />
         <meta property="og:title" content="Kazunori MATSUNAGA" />
-        <meta property="og:description" content="フロントエンドディベロッパー。レスポンシブWebコーディング・CMS利用のWeb制作が経験豊富で、大規模サイトの制作・運用実績もある。興味のある領域は、ユーザーインターフェース・Webアクセシビリティ。工学・芸術の学士。趣味は音楽（鑑賞・演奏・制作）など。。" />
+        <meta property="og:description" content="フロントエンドディベロッパー。レスポンシブWebコーディングやCMS利用のWeb制作の経験が多め。中〜大規模サイトの制作や運用実績もあり。興味のある領域は、ユーザーインターフェース・Webアクセシビリティ。工学・芸術の学士。趣味は音楽（鑑賞・演奏・制作）など。。" />
         <meta property="og:site_name" content="Kazunori MATSUNAGA" />
         <meta property="og:image" content="https://www.kazunorimatsunaga.com/images/ogimage.png" />
         <meta name="twitter:card" content="summary_large_image" />
