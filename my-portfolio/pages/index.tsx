@@ -62,7 +62,7 @@ export default function Home({ works }: { works: any }) {
           <section id="profile" className={styles.section}>
             <h1>Profile</h1>
             <div className={styles.section__inner}>
-              <p>松永 知典 / Kazunori MATSUNAGA<br />1993年生まれ。京都府在住、大分県出身。</p>
+              <p><ruby>松<rt>まつ</rt>永<rt>なが</rt>知<rt>かず</rt>典<rt>のり</rt></ruby><br />1993年生まれ。京都府在住、大分県出身。</p>
               <div>
                 <div className={styles.group}>
                   <h2>Type</h2>
