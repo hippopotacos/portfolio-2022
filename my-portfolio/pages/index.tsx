@@ -1,15 +1,16 @@
-import styles from "../styles/Home.module.scss"
+import { GetStaticProps } from "next"
+import Head from "next/head"
+import Link from "next/link"
+import Image from "next/image"
+
+import { client } from "../libs/client"
 import Header from "../components/Header"
 import Main from '../components/Main'
 import Footer from "../components/Footer"
-import Link from "next/link"
-import Image from 'next/image'
-import { client } from "../libs/client"
 import Layout from "../components/Layout"
 import Introduction from "../components/Introduction"
 import Contact from "../components/Contact"
-import Head from "next/head"
-import { GetStaticProps } from "next"
+import styles from "../styles/Home.module.scss"
 
 export default function Home({ works }: { works: any }) {
   return (

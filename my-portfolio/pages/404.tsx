@@ -1,8 +1,9 @@
 import Head from "next/head"
+import Image from "next/image"
+
 import Header from "../components/Header"
 import Main from "../components/Main"
 import Layout from "../components/Layout"
-import Image from "next/image"
 import Button from "../components/Button"
 import Footer from "../components/Footer"
 

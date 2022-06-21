@@ -1,7 +1,8 @@
+import { useEffect, useState } from "react"
+import Link from "next/link"
+
 import Logo from "./Logo"
 import styles from "../styles/Header.module.scss"
-import Link from "next/link"
-import { useEffect, useState } from "react"
 
 export default function Header() {
   const [drawer, setDrawer] = useState(false)
