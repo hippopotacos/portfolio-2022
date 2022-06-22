@@ -5,7 +5,7 @@ interface Props {
   href: string
 }
 
-export default function Button({children, href}: Props) {
+export const Button = ({children, href}: Props) => {
   return (
     <>
       <div className={styles.button}>

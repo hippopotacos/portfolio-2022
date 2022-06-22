@@ -5,7 +5,7 @@ interface Props {
   works?: boolean
 }
 
-export default function Layout( {children, works}: Props ) {
+export const Layout = ( {children, works}: Props ) => {
   return (
     <>
       <div className={`${styles.wrapper} ${works && styles.post}`}>

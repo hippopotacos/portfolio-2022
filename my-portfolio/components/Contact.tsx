@@ -1,9 +1,9 @@
 import Image from "next/image"
 
+import { Button } from "./Button"
 import styles from "../styles/Contact.module.scss"
-import Button from "./Button"
 
-export default function Contact() {
+export const Contact = () => {
   return (
     <>
       <div className={styles.contact}>

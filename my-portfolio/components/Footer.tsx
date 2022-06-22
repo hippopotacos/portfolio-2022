@@ -4,7 +4,7 @@ interface Props {
   playlist?: boolean
 }
 
-export default function Footer(props: Props) {
+export const Footer = (props: Props) => {
   return (
     <>
       <footer className={styles.footer}>

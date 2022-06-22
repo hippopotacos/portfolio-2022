@@ -3,11 +3,11 @@ import Head from "next/head"
 import Image from "next/image"
 
 import { client } from "../../libs/client"
-import Header from "../../components/Header"
-import Main from "../../components/Main"
-import Footer from "../../components/Footer"
-import Button from "../../components/Button"
-import Layout from "../../components/Layout"
+import { Header } from "../../components/Header"
+import { Main } from "../../components/Main"
+import { Footer } from "../../components/Footer"
+import { Button } from "../../components/Button"
+import { Layout } from "../../components/Layout"
 
 export default function Template({ works }: { works: any }) {
   return (
