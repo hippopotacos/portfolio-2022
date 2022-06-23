@@ -42,12 +42,12 @@
   color: var(--color-primary);
 }
 
-.item__external {
-  @include external-link;
+.item__link {
+  @include link-outward;
 }
 
-.item__external::after {
-  @include external-link-after;
+.item__link::after {
+  @include link-outward-after;
 }
 
 .item__type + .item__name {

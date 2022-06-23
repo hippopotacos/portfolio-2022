@@ -1,8 +1,8 @@
-@mixin external-link() {
+@mixin link-outward() {
   position: relative;
 }
 
-@mixin external-link-after() {
+@mixin link-outward-after() {
   content: '';
   display: inline-block;
   position: relative;

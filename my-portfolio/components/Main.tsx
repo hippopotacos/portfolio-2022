@@ -8,10 +8,8 @@ export const Main = ({children}: Props) => {
   return (
     <>
       <main className={styles.main}>
-        <div className={styles.container}>
-          <div className={styles.container__inner}>
-            {children}
-          </div>
+        <div className={styles.main__container}>
+          {children}
         </div>
       </main>
     </>

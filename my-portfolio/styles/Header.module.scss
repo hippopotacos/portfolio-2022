@@ -60,7 +60,6 @@
   }
 }
 
-
 .header__button {
   position: fixed;
   z-index: var(--index-header-button);
@@ -124,7 +123,6 @@
     left: auto;
     right: 0;
     transition: opacity .3s ease-in-out .1s;
-
   }
 
   .header__list {

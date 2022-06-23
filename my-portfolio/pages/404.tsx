@@ -12,8 +12,8 @@ export default function Custom404() {
     <>
       <Head>
         <title>お探しのページが見つかりません - Kazunori MATSUNAGA Portfolio</title>
-        <link rel="icon" type="image/png" href="images/favicon.png" />
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
       </Head>
       <Header />

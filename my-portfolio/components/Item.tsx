@@ -26,7 +26,7 @@ export const Item = ({term, emphasis, title, href, position, status, children} :
               <span className={styles.item__name}>
                 {
                   href ? (
-                    <a className={styles.item__external} href={ href } target="_blank" rel="noopener noreferrer">{ title }</a>
+                    <a className={styles.item__link} href={ href } target="_blank" rel="noopener noreferrer">{ title }</a>
                   ) : (
                     title
                   )

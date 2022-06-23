@@ -119,11 +119,11 @@
 
 .post {
   a:not([class]) {
-    @include external-link;
+    @include link-outward;
   }
   
   a:not([class])::after {
-    @include external-link-after;
+    @include link-outward-after;
   }
 
   dl:not([class]) {

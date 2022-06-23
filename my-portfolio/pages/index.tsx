@@ -26,8 +26,8 @@ export default function Home({ works }: { works: any }) {
         <meta property="og:site_name" content="Kazunori MATSUNAGA" />
         <meta property="og:image" content="https://www.kazunorimatsunaga.com/images/ogimage.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" type="image/png" href="images/favicon.png" />
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
       </Head>
       <Header />
@@ -66,10 +66,10 @@ export default function Home({ works }: { works: any }) {
             <div className={styles.section__inner}>
               <p><ruby>松<rt>まつ</rt>永<rt>なが</rt>知<rt>かず</rt>典<rt>のり</rt></ruby><br />1993年生まれ。京都府在住、大分県出身。</p>
               <div>
-                <div className={styles.group}>
+                <div className={styles.section__body}>
                   <h2>Type</h2>
-                  <div className={styles.group__inner}>
-                    <dl className={styles.group__list}>
+                  <div className={styles.section__group}>
+                    <dl className={styles.section__list}>
                       <Item
                         term="16Personality"
                         title="仲介者"
@@ -83,9 +83,9 @@ export default function Home({ works }: { works: any }) {
                     </dl>
                   </div>
                 </div>
-                <div className={styles.group}>
+                <div className={styles.section__body}>
                   <h2>Skill</h2>
-                  <div className={styles.group__inner}>
+                  <div className={styles.section__group}>
                     <ul>
                       <li>主にフロントエンド分野でのWebサイト制作 (開発環境設定〜レスポンシブ対応の実装〜リリース〜運用)</li>
                       <li>品質、コスト、納期を天秤にかけて解決策を練り、提案</li>
@@ -94,8 +94,8 @@ export default function Home({ works }: { works: any }) {
                       <li>学習意欲を持ちながら取り組み、計画が変わっても粘り強くやる</li>
                     </ul>
                   </div>
-                  <div className={styles.group__inner}>
-                    <dl className={styles.group__list}>
+                  <div className={styles.section__group}>
+                    <dl className={styles.section__list}>
                       <Item
                         term="Languages"
                         emphasis
@@ -128,9 +128,9 @@ export default function Home({ works }: { works: any }) {
                     </dl>
                   </div>
                 </div>
-                <div className={styles.group}>
+                <div className={styles.section__body}>
                   <h2>Will</h2>
-                  <div className={styles.group__inner}>
+                  <div className={styles.section__group}>
                     <ul>
                       <li>アクセシビリティ向上、デザインシステム改善、持続可能性の高いUIの制作など、プロジェクトに長く関わる中でのサービス改善</li>
                       <li>知ることや学ぶことに関するプロジェクト</li>
@@ -138,9 +138,9 @@ export default function Home({ works }: { works: any }) {
                     </ul>
                   </div>
                 </div>
-                <div className={styles.group}>
+                <div className={styles.section__body}>
                   <h2>Experience</h2>
-                  <dl className={styles.group__list}>
+                  <dl className={styles.section__list}>
                     <Item
                       term="2018.04 - 2022.05"
                       href="https://www.ankh-systems.co.jp/"
@@ -181,9 +181,9 @@ export default function Home({ works }: { works: any }) {
                     </Item>
                   </dl>
                 </div>
-                <div id="education" className={styles.group}>
+                <div id="education" className={styles.section__body}>
                   <h2>Education</h2>
-                  <dl className={styles.group__list}>
+                  <dl className={styles.section__list}>
                     <Item
                       term="2018.04 - 2022.03"
                       title="京都芸術大学 通信教育部 デザイン科 グラフィックデザインコース"
@@ -219,9 +219,9 @@ export default function Home({ works }: { works: any }) {
                     </Item>
                   </dl>
                 </div>
-                <div className={styles.group}>
+                <div className={styles.section__body}>
                   <h2>Certification</h2>
-                  <dl className={styles.group__list}>
+                  <dl className={styles.section__list}>
                     <Item
                       term="2021.04"
                       title="TOEIC 765"

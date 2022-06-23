@@ -22,8 +22,8 @@ export default function Template({ works }: { works: any }) {
         <meta property="og:site_name" content="Kazunori MATSUNAGA" />
         <meta property="og:image" content={works.keyVisual ? works.keyVisual.url : "https://www.kazunorimatsunaga.com/images/ogimage.png"} />
         <meta name="twitter:card" content="summary_large_image" />
-        <link rel="icon" type="image/png" href="images/favicon.png" />
-        <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
+        <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
         <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
       </Head>
       <Header />
