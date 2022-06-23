@@ -1,0 +1,15 @@
+@mixin external-link() {
+  position: relative;
+}
+
+@mixin external-link-after() {
+  content: '';
+  display: inline-block;
+  position: relative;
+  bottom: -0.5rem;
+  right: 0rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url(/images/arrow_outward_white.svg);
+  background-size: cover;
+}

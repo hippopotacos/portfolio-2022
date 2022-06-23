@@ -1,3 +1,5 @@
+@import "./mixin.scss";
+
 .wrapper {
   margin-bottom: 8rem;
 
@@ -117,19 +119,11 @@
 
 .post {
   a:not([class]) {
-    position: relative;
+    @include external-link;
   }
   
   a:not([class])::after {
-    content: '';
-    display: inline-block;
-    position: relative;
-    bottom: -0.5rem;
-    right: 0;
-    width: 1.4rem;
-    height: 1.4rem;
-    background-image: url(/images/arrow_outward_white.svg);
-    background-size: cover;
+    @include external-link-after;
   }
 
   dl:not([class]) {

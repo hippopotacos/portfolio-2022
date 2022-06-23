@@ -1,0 +1,55 @@
+@import "./mixin.scss";
+
+.item {
+  display: block;
+}
+
+.item:not(:first-child) {
+  margin-top: 3.2rem;
+}
+
+.item__term {
+  display: block;
+  font-size: 1.2rem;
+}
+
+.item__category {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--color-primary);
+}
+
+.item__description {
+  display: block;
+}
+
+.item__name {
+  vertical-align: middle;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.item__status,
+.item__service {
+  font-size: 1.2rem;
+}
+
+.item__position {
+  display: block;
+  margin-top: .4rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.item__external {
+  @include external-link;
+}
+
+.item__external::after {
+  @include external-link-after;
+}
+
+.item__type + .item__name {
+  margin-left: .6rem;
+}
