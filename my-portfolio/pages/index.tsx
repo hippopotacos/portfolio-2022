@@ -135,7 +135,7 @@ export default function Home({ works }: { works: any }) {
                   <h2>Experience</h2>
                   <dl className={styles.group__list}>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2018.04 - 2022.05</td>
+                      <dt className={styles.group__term}>2018.04 - 2022.05</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>
@@ -155,7 +155,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2013.09 - 2018.03</td>
+                      <dt className={styles.group__term}>2013.09 - 2018.03</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>
@@ -173,7 +173,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2017.08, 2017.11 - 2017.12</td>
+                      <dt className={styles.group__term}>2017.08, 2017.11 - 2017.12</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>
@@ -196,7 +196,7 @@ export default function Home({ works }: { works: any }) {
                   <h2>Education</h2>
                   <dl className={styles.group__list}>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2018.04 - 2022.03</td>
+                      <dt className={styles.group__term}>2018.04 - 2022.03</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>京都芸術大学 通信教育部 デザイン科 グラフィックデザインコース</span>
@@ -213,7 +213,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2017.04 - 2018.02</td>
+                      <dt className={styles.group__term}>2017.04 - 2018.02</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>立命館大学大学院 情報理工学研究科 情報理工学専攻 人間情報科学コース</span>
@@ -227,7 +227,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2013.04 - 2017.03</td>
+                      <dt className={styles.group__term}>2013.04 - 2017.03</dt>
                       <dd className={styles.group__description}>
                         <div className={styles.group__title}>
                           <span className={styles.group__name}>立命館大学 情報理工学部 メディア情報学科</span>
@@ -249,13 +249,13 @@ export default function Home({ works }: { works: any }) {
                   <h2>Certification</h2>
                   <dl className={styles.group__list}>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2021.04</td>
+                      <dt className={styles.group__term}>2021.04</dt>
                       <dd className={styles.group__description}>
                         <span className={styles.group__name}>TOEIC 765</span>
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2020.10</td>
+                      <dt className={styles.group__term}>2020.10</dt>
                       <dd className={styles.group__description}>
                         <span className={styles.group__name}>
                           <a className={styles.link__outward} href="https://html5exam.jp/outline/lv2.html" target="_blank" rel="noopener noreferrer">HTMLプロフェッショナル レベル2</a>
@@ -263,7 +263,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2019.11</td>
+                      <dt className={styles.group__term}>2019.11</dt>
                       <dd className={styles.group__description}>
                         <span className={styles.group__name}>
                           <a className={styles.link__outward} href="https://html5exam.jp/outline/lv1.html" target="_blank" rel="noopener noreferrer">HTMLプロフェッショナル レベル1</a>
@@ -271,7 +271,7 @@ export default function Home({ works }: { works: any }) {
                       </dd>
                     </div>
                     <div className={styles.group__item}>
-                      <td className={styles.group__term}>2013.09</td>
+                      <dt className={styles.group__term}>2013.09</dt>
                       <dd className={styles.group__description}>
                         <span className={styles.group__name}>普通自動車第一種運転免許（AT限定）取得</span>
                       </dd>
