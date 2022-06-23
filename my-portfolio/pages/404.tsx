@@ -30,5 +30,5 @@ export default function Custom404() {
       </Main>
       <Footer playlist />
     </>
-  );
+  )
 }

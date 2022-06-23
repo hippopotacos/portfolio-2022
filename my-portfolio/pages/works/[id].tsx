@@ -111,4 +111,4 @@ export const getStaticProps: GetStaticProps = async (context: any) => {
       works: data,
     },
   }
-};
+}

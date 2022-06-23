@@ -293,16 +293,16 @@ export default function Home({ works }: { works: any }) {
       </Main>
       <Footer />
     </>
-  );
+  )
 }
 
 // データをテンプレートに受け渡す部分の処理を記述します
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.get({ endpoint: "works" });
+  const data = await client.get({ endpoint: "works" })
 
   return {
     props: {
       works: data.contents
     }
-  };
-};
+  }
+}
