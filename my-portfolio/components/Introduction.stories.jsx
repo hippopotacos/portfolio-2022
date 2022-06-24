@@ -5,4 +5,4 @@ export default {
   component: Introduction
 }
 
-export const Primary = () => <Introduction />
+export const Default = () => <Introduction />

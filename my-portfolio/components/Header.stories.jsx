@@ -5,4 +5,4 @@ export default {
   component: Header
 }
 
-export const Primary = () => <Header />
+export const Default = () => <Header />

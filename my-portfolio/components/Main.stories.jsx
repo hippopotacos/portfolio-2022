@@ -1,11 +1,11 @@
-import { Main } from './Main';
+import { Main } from './Main'
 
 export default {
   title: 'parts/Main',
   component: Main
-};
+}
 
-export const Primary = () => {
+export const Default = () => {
   return (
     <Main>
       <h1>h1</h1>

@@ -5,5 +5,14 @@ export default {
   component: Footer
 }
 
-export const Primary = () => <Footer />
-export const Secondary = () => <Footer playlist />
+const Template = args => <Footer {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  playlist: false
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  playlist: true
+}

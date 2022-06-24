@@ -1,8 +1,8 @@
-import { Logo } from './Logo';
+import { Logo } from './Logo'
 
 export default {
   title: 'parts/Logo',
   component: Logo
-};
+}
 
-export const Primary = () => <Logo />
+export const Default = () => <Logo />

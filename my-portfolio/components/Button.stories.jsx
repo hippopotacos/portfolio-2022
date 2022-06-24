@@ -3,10 +3,12 @@ import { Button } from './Button'
 export default {
   title: 'parts/Button',
   component: Button,
-};
+}
 
-export const Primary = () => {
-  return (
-    <Button>Click me</Button>
-  )
-};
+const Template = args => <Button {...args} />
+
+export const Default = Template.bind({});
+Default.args = {
+  children: "もっとみる",
+  href: "/"
+}

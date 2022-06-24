@@ -5,4 +5,4 @@ export default {
   component: Contact
 }
 
-export const Primary = () => <Contact />
+export const Default = () => <Contact />

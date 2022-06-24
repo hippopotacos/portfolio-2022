@@ -5,12 +5,28 @@ export default {
   component: Item
 }
 
-export const Primary = () => {
-  return (
-    <Item
-      term="2020.12 - 2021.04"
-      title="会社名"
-      position="フロントエンドエンジニア"
-    />
-  )
+const Template = args => <Item {...args} />
+
+export const Primary = Template.bind({})
+Primary.args = {
+  term: "16Personality",
+  title: "仲介者",
+  href: "/"
+}
+
+export const Secondary = Template.bind({})
+Secondary.args = {
+  term: "Language",
+  emphasis: true,
+  children: <p>HTML/CSS/JavaScript</p>
+}
+
+export const Tertiary = Template.bind({})
+Tertiary.args = {
+  term: "2018.04 - 2022.05",
+  title: "会社名",
+  position: "フロントエンド",
+  href: "/",
+  status: "（退職済み）",
+  children: <p>ここに詳細な文章が入る</p>
 }
