@@ -8,3 +8,9 @@
   width: 64rem;
   max-width: 100%;
 }
+
+@media not all and (min-width: 768px) {
+  .main {
+    font-size: 1.4rem;
+  }
+}
