@@ -14,12 +14,7 @@ export const Item = ({term, emphasis, title, href, position, status, children} :
   return (
     <>
       <div className={styles.item}>
-        { emphasis ? (
-            <dt className={styles.item__category}>{ term }</dt>
-          ) : (
-            <dt className={styles.item__term}>{ term }</dt>
-          )
-        }
+        <dt className={emphasis ? styles.item__category : styles.item__term}>{ term }</dt>
         <dd className={styles.item__description}>
           <div className={styles.item__title}>
             <p>
